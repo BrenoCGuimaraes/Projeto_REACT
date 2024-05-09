@@ -45,28 +45,30 @@ export default function Contador() {
 
   return (
     <>
-      <div style={{ display: 'flex', position: 'relative', margin: '0 auto', border: '2px solid black', flexDirection: 'column', alignItems: 'center' }}>
+      <div id="container-total">
         <h1>Total</h1>
-        <span style={{ border: '2px solid', padding: '7px 45px', borderRadius: '5px' }}>{contT}</span>
-        <img src={reload} style={{ display: 'flex', position: 'absolute', width: '50px', right: '10px', top: '10px' }} onClick={resetCounts} />
-        <div style={{ display: 'flex' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <img src={homemImg} style={{ width: '200px' }} />
-            <div style={{ display: 'flex', flexDirection: 'row', gap: '20px', alignItems: 'center' }}>
-              <img src={mais} style={{ width: '50px' }} onClick={incrementH} />
-              <img src={menos} style={{ width: '50px' }} onClick={decrementH} />
+        <span class="spans">{contT}</span>
+        <img id="reload" src={reload} onClick={resetCounts} />
+        <div id="containerCasal">
+          
+          <div class="containerHomemMulher">
+            <img class="imgCasal" src={homemImg}/>
+            <div class="operacoes">
+              <img class="imgAdiçãoSub" src={mais} onClick={incrementH} />
+              <img class="imgAdiçãoSub" src={menos} onClick={decrementH} />
             </div>
             <h1>HOMEM</h1>
-            <span style={{ border: '2px solid', padding: '7px 45px', borderRadius: '5px' }}>{contH}</span>
+            <span class="spans">{contH}</span>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <img src={mulherImg} style={{ width: '200px' }} />
-            <div style={{ display: 'flex', flexDirection: 'row', gap: '20px', alignItems: 'center' }}>
-              <img src={mais} style={{ width: '50px' }} onClick={incrementM} />
-              <img src={menos} style={{ width: '50px' }} onClick={decrementM} />
+
+          <div class="containerHomemMulher">
+            <img class="imgCasal" src={mulherImg}/>
+            <div class="operacoes">
+              <img class="imgAdiçãoSub" src={mais} onClick={incrementM} />
+              <img class="imgAdiçãoSub" src={menos} onClick={decrementM} />
             </div>
             <h1>MULHER</h1>
-            <span style={{ border: '2px solid', padding: '7px 45px', borderRadius: '5px' }}>{contM}</span>
+            <span class="spans">{contM}</span>
           </div>
         </div>
       </div>
