@@ -13,6 +13,12 @@ const Home = () =>{
                     <li>
                         <Link to="/atividade02">Atividade 2</Link>
                     </li>
+                    <li>
+                        <Link to="/atividade03">Atividade 3</Link>
+                    </li>
+                    <li>
+                        <Link to="/atividade04">Atividade 4</Link>
+                    </li>
                 </ul>
             </nav>
         </>
