@@ -1,0 +1,40 @@
+#container-regex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#container-regex span {
+    font-size: 1.2rem;
+}
+
+#container-regex #container-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#container-regex #container-buttons button {
+    background-color: black;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.4rem;
+}
+
+#container-regex input {
+    font-size: 1.1rem;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+#container-regex #container-contadores {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
